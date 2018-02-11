@@ -19,7 +19,7 @@ def find_first_link(url):
     for element in content_div.find_all("p", recursive=False):
         # Find the first anchor tag that's a direct child of a paragraph.
         anchor = element.find("a", recursive=False)
-        if anchor
+        if anchor:
             article_link = anchor.get("href")
             break
 
